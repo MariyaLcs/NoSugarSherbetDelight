@@ -15,10 +15,13 @@ export default function Sherbet() {
     <div className="card">
       {sherbet.map((item) => (
         <div key={item.id} className="sherbet-title">
-          <Link to={`/sherbet/${item.id}`}>
+          <Link
+            to={`/sherbet/${item.id}`}
+            aria-label={`Vew detail for ${item.name}`}
+          >
             <img src={`/assets/images/${item.image}`} alt={item.name} />
             <h2>{item.name}</h2>
-            <p>£{item.price}/box</p>
+            <p>{item.time} mins</p>
             <i className={`sherbet-type ${item.type}`}>{item.type}</i>
           </Link>
         </div>
