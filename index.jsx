@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Sherbet from "./pages/Sherbet";
 
 function App() {
   return (
@@ -13,11 +14,13 @@ function App() {
         </Link>
         <nav>
           <Link to="/about">About</Link>
+          <Link to="/sherbet">Sherbet</Link>
         </nav>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sherbet" element={<Sherbet />} />
       </Routes>
     </BrowserRouter>
   );

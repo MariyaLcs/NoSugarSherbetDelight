@@ -76,7 +76,7 @@ header a:hover {
   -o-background-size: cover;
   background-size: cover;
   min-height: 350px;
-  color: #526061;
+  color: #161616;
   padding: 45px 23px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
@@ -112,14 +112,31 @@ header a:hover {
 }
 
 /*** ABOUT PAGE ***/
+.about-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .about-hero-image {
-  max-width: 100%;
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .about-page-content {
   padding-inline: 23px;
   color: #161616;
   margin-bottom: 55px;
+}
+
+.about-page-content,
+.about-page-cta {
+  width: 50%;
+  max-width: 600px;
 }
 
 .about-page-content h1 {
@@ -148,4 +165,37 @@ header a:hover {
   background-color: #161616;
   color: white;
   border-radius: 10px;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .about-page-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  .about-hero-image,
+  .about-page-content,
+  .about-page-cta {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+/* Responsive adjustments for medium-sized devices */
+@media (min-width: 768px) {
+  .about-page-container {
+    flex-direction: row; /* Align items in a row for medium-sized devices */
+    justify-content: center;
+    text-align: left;
+  }
+
+  .about-hero-image {
+    /* Adjust the size of the image as per your design */
+    width: 50%;
+    max-width: 50%;
+    margin-right: 20px; /* Add some space between the image and the text */
+  }
+
+  .about-page-content,
+  .about-page-cta {
+    width: 50%;
+    max-width: 50%;
+  }
 }
