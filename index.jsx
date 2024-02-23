@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Sherbet from "./pages/Sherbet";
 
+import "./server";
+
 function App() {
   return (
     <BrowserRouter>
