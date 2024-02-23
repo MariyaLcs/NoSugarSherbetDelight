@@ -22,11 +22,7 @@ export default function About() {
         </p>
       </div>
       <div className="about-page-cta">
-        <h2>
-          Your perfect treat awaits.
-          <br />
-          Your flavor adventure starts here.
-        </h2>
+        <h2>Your flavor adventure starts here.</h2>
         <Link className="link-button" to="/sherbet">
           Explore our flavors
         </Link>

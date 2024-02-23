@@ -71,7 +71,7 @@ createServer({
 
     this.get("/sherbet/:id", (schema, request) => {
       let id = request.params.id;
-      return schema.sherbet.find(id);
+      return schema.sherbets.find(id);
     });
   },
 });
