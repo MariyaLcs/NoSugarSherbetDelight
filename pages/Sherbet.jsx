@@ -17,7 +17,7 @@ export default function Sherbet() {
         <div key={item.id} className="sherbet-title">
           <img src={`/assets/images/${item.image}`} alt={item.name} />
           <h2>{item.name}</h2>
-          <p>{item.price}</p>
+          <p>£{item.price}/box</p>
           <i className={`sherbet-type ${item.type}`}>{item.type}</i>
         </div>
       ))}
