@@ -187,13 +187,11 @@ header a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for cards */
 .sherbet-title:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles for the image */
 .sherbet-title img {
   width: 100%;
   height: 350px;
@@ -241,6 +239,85 @@ header a:hover {
 .sherbet-type.citrus {
   background-color: #fffacd;
   color: #e1a100;
+}
+
+/*** Sherbet Details Page ***/
+/* Base container to ensure consistent margin and padding */
+div {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px; /* Adjust as needed */
+}
+
+/* Style for the sherbet details container */
+.sherbet-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  background: #f9f9f9; /* Light background color */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the sherbet image */
+.sherbet-detail img {
+  width: 100%;
+  max-width: 400px; /* Adjust based on your preference */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Style for the sherbet name */
+.sherbet-detail h2 {
+  color: #333; /* Dark text color for contrast */
+  font-size: 2.2rem; /* Large font size for emphasis */
+  text-align: center;
+}
+
+/* Style for the description and recipe text */
+.sherbet-detail p {
+  color: #555; /* Slightly lighter text color for readability */
+  font-size: 1rem;
+  line-height: 1.6; /* Improved line spacing */
+  text-align: justify; /* Justified text for neat alignment */
+  margin: 0 0 10px; /* Space below paragraphs */
+}
+
+/* Loading message style */
+h2 {
+  text-align: center;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+/* Continue with the previous styles, and add these for the recipe steps */
+
+/* Style for the sherbet recipe container */
+.sherbet-detail .recipe {
+  background: #fff8dc; /* A light background color that stands out */
+  color: #6b8e23; /* A color that contrasts well with the background */
+  padding: 15px;
+  margin-top: 20px; /* Add some space above the recipe section */
+  border-radius: 8px; /* Rounded corners for the recipe container */
+  border: 1px dashed #6b8e23; /* A dashed border for visual interest */
+  font-style: italic; /* Italicize recipe text for differentiation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+/* Enhanced typography for recipe steps */
+.sherbet-detail .recipe p {
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  line-height: 1.8; /* More line space for clarity */
+  text-align: left; /* Align text to the left for a structured appearance */
+  font-weight: bold; /* Make the text bold for emphasis */
+}
+
+/* Optionally, style the first paragraph differently to highlight the start */
+.sherbet-detail .recipe p:first-child {
+  font-size: 1.2rem; /* Even larger font size for the first step */
+  color: #556b2f; /* Darker color for the first step for emphasis */
 }
 
 /* Additional styling for responsiveness */
